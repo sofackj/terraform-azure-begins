@@ -8,9 +8,10 @@ resource "azurerm_network_security_group" "katarina" {
   location            = azurerm_resource_group.katarina.location
   resource_group_name = azurerm_resource_group.katarina.name
 }
+
 # Create a virtual network or vpc
 resource "azurerm_virtual_network" "katarina" {
-  name                = "example-network"
+  name                = "katarina-network"
   location            = azurerm_resource_group.katarina.location
   resource_group_name = azurerm_resource_group.katarina.name
   address_space       = ["13.78.128.0/22"]
