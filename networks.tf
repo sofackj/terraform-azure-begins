@@ -1,8 +1,3 @@
-resource "azurerm_resource_group" "katarina" {
-  name     = "katarina-resources"
-  location = "West Europe"
-}
-
 # Create a virtual network or vpc
 resource "azurerm_virtual_network" "katarina" {
   name                = "katarina-network"
