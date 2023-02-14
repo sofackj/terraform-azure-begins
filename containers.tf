@@ -2,7 +2,7 @@ resource "azurerm_container_group" "poppy" {
   name                = "docker-in-runeterra"
   location            = azurerm_resource_group.katarina.location
   resource_group_name = azurerm_resource_group.katarina.name
-  ip_address_type     = "public"
+  ip_address_type     = "Public"
   os_type             = "Linux"
 
   container {
