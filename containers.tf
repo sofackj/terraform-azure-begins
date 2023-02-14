@@ -1,8 +1,3 @@
-resource "azurerm_resource_group" "example" {
-  name     = "example-resources"
-  location = "West Europe"
-}
-
 resource "azurerm_container_group" "poppy" {
   name                = "docker-in-runeterra"
   location            = azurerm_resource_group.katarina.location
