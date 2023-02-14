@@ -20,3 +20,8 @@ az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/SUBSCRIPT
 ```sh
 az login --service-principal -u CLIENT_ID -p CLIENT_SECRET --tenant TENANT_ID
 ```
+### Pick up the private key and the public ip of the instance
+```sh
+terraform output -raw tls_private_key > id_rsa
+terraform output public_ip_address
+```
