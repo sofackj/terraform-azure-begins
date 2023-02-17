@@ -11,9 +11,6 @@ az account list
 az account set --subscription="SUBSCRIPTION_ID"
 ```
 ```sh
-az account set --subscription="SUBSCRIPTION_ID"
-```
-```sh
 az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/SUBSCRIPTION_ID"
 ```
 ### appId client_id, password client_secret, tenant tenant_id
